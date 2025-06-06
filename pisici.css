@@ -1,0 +1,128 @@
+*{padding: 0;
+margin: 0;
+text-decoration: none;
+box-sizing; border-box;}
+		.navbar{background: linear-gradient(to right, #ffadad, #ffd6a5, #fdffb6, white, white,#fdffb6,#caffbf,#9bf6ff, #a0c4ff, #ffc6ff);
+			font-family: times new roman;
+			padding-right:15px;
+			padding-left:15px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+			height: 90px;
+			width:100%;
+		}
+		.navbar a:hover{color: #ad96b9; transition: .5s;
+		}
+		.navdiv{display: flex; align-items: center; justify-content: space-between;}
+		.iconimg img{width: 60px;
+			height: 60px;
+			margin-bottom: 15px;
+			margin-top: 15px;
+			border-radius: 30%;
+			box-shadow: 6px 6px #acc3d7;}
+		.logo a {font-size: 55px; font-weight: 700; color: #181C14;
+		line-height: 80px; font-family: Edwardian Script ITC;
+		padding: 0 100px;
+			}
+		.logo a:hover{color:#181C14;}
+		.vai ul{
+  list-style-type: none;
+}
+
+
+nav ul, nav li{
+  margin:0;
+  padding:0;
+}
+nav a{
+  text-decoration: none;
+  color:black;
+  display: block;
+  font-weight: bold;
+  transition: background-color 3s, color 3s, font-size 3s;
+
+}
+nav {
+  
+  height: 50px;
+  width:100%;
+  position:sticky;
+  top:0;
+  z-index:3;
+}
+nav>ul.meniu>li>ul.submeniu{
+  display: none;
+}
+nav>ul.meniu>li:hover>ul.submeniu{
+  display: block;
+}
+ul.meniu{
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content: space-around;
+}
+ul.meniu>li{
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  flex:1 200px;
+}
+ul.submeniu>li{
+  height:50px;
+  line-height: 50px;
+  text-align: center;
+  
+  background-color: #f9f9f9;
+}
+nav a:hover{
+  color:#b046cb;
+  font-size: 18px;
+  animation: sus 0.5s;
+}
+		*{box-sizing: border-box;}
+		.poza{
+ float: left;
+ 
+  padding: 5px;
+  } /* cum le asez la mijloc */
+		.pozici::after{
+		content: "";
+  clear: both;
+  display: table;}
+	.parte1 h1{text-align: center;
+	font-size: 50px;
+	font-weight: 1000;
+	}
+	.parte1 p{text-align: center;
+	padding-right:50px;
+			padding-left:50px;
+			line-height: 1.5;
+			font-family: Bahnschrift Light;
+			}
+	.parte2 h1{
+			font-size: 20px;
+	font-weight: 1000;
+	padding-left: 100px;
+	
+	}
+	
+	
+  .imaginile{
+	width: 100%;
+	height: 300px;
+	margin: 20px;
+	column-count: 2; 
+	
+	} 
+	
+	.treip { display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  background-image: linear-gradient(white, #c38adf);
+  }
+  .treip img {
+  margin: auto;}
+	.idk {background-image: linear-gradient(to right, #eaccf9, #c38adf); padding: 10px 0;}
+	.idk p{font-family: Bahnschrift Light; font-size: 20px; text-align: center; color: white;
+	}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird</title>
+	<style>
+		body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 75px);
+    grid-gap: 4px;
+}
+
+.box {
+    width: 75px;
+    height: 75px;
+    padding: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: floralwhite;
+    color: black;
+    border: 4px dotted black;
+    text-align: center;
+}
+
+.box:nth-child(2),
+.box:nth-child(3),
+.box:nth-child(4) {
+    background-color: coral;
+}
+
+.circle {
+    background-color: lightgray;
+    border: none;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.circle:hover {
+    background-color: crimson;
+    color: crimson;
+    transform: scale(0.33);
+}
+
+@media (max-width: 600px) and (min-width: 350px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .circle {
+        width: 50%;
+    }
+}
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">1</div>
+		<div class="box circle">O</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">7</div>
+        
+    </div>
+</body>
+</html>

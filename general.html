@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<link rel="stylesheet" href="general.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="icon" type="image/jfif" href="dash.jfif">
+	<title>Purrrfect Land</title>
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check" >
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<img src="day-and-night.png" id="icon">
+		<label class="logo"><i>Purrrfect Land</i></label>
+		<ul class="lol">
+			<li>
+				<div class="dropdown">
+				<a class="ok dropbtn" href="test.html">Acasă</a>
+				</div>
+				<div class="dropdown">
+				<a  class="ok dropbtn" href="postari.html">Postări</a>
+				</div>
+				</li>
+			<li>
+			<div class="dropdown">
+				<a class="dropbtn" href="general.html">General</a>
+				<div class="dropdown-content">
+					<a href="blana1.html">Blană scurtă</a>
+					<a href="blana2.html">Blană medie</a>
+					<a href="blana3.html">Blană lungă</a>
+				</div>
+			</div>
+			</li>
+			<li><div class="dropdown"> <a class="dropbtn" href="curiozitati.html">Curiozități</a></div></li>
+			<li><div class="dropdown"> <a class="dropbtn" href="trecut.html">Trecut</a></div></li>
+		</ul>
+	</nav>
+	
+	<div class="nush">
+		<img src="pisilic.webp" alt="pis">
+	</div>
+	<div class="info">
+		<h2><i>Informații generale</i></h2>
+		
+		<div class="pap"><p>Pisicile sunt animale domestice fascinante și populare, cunoscute pentru grația, independența și personalitățile lor variate. Iată câteva informații generale despre pisici:</p></div>
+		<br><br><br>
+		
+		<h3>Origine</h3>
+		<div class="poz1">
+			<img src="iris.webp" alt="iris">
+			<p>Pisicile domestice (Felis catus) sunt animale cu o istorie lungă de domesticire, care datează de aproximativ 9.000 de ani. S-au crezut inițial că provin din Orientul Mijlociu, dar au fost domesticite și răspândite în întreaga lume.</p>
+		</div>
+		
+		<h3>Morfofizionomie</h3>
+		<div class="poz2">
+			<p>Pisicile au o mare varietate de dimensiuni, culori și tipuri de blană. Ele pot fi de la pisici mici, cum ar fi pisicile exotice, până la pisici mari, cum ar fi Maine Coon-urile. Blana lor poate fi scurtă, medie sau lungă, iar culorile variază de la negru la alb și multe alte nuanțe și modele.</p>
+			<img src="p2.webp" alt="pe"></div>
+			
+		<h3>Comportament</h3>
+		<div class="poz3">
+			<img src="p3.webp" alt="p3">
+			<p>Pisicile sunt animale independente și curioase. Ele sunt cunoscute pentru abilitățile lor de vânătoare, reflexele rapide și agilitatea lor. Pisicile sunt și animale de companie afectuoase și pot dezvolta legături puternice cu stăpânii lor.</p>
+		</div>
+		
+		<h3>Hrănire și Dieta</h3>
+		<div class="poz4">
+			<p>Pisicile sunt carnivore, ceea ce înseamnă că necesită o dietă bogată în proteine animale. O dietă echilibrată pentru o pisică include carne, organe, o mică cantitate de legume și fibre. Este important să li se ofere și acces la apă proaspătă în permanență.</p>
+			<img src="p4.webp" alt="p4">
+		</div>
+		
+		<h3>Îngrijire și Igienă</h3>
+		<div class="poz5">
+			<img src="p5.webp" alt="p5">
+			<p>Pisicile sunt animale curate și își petrec mult timp curățându-și blana. Pentru a-și menține sănătatea și igiena, ele au nevoie de periaj regulat pentru a elimina firele de păr moarte și a preveni formarea de blănuri.</p>
+		</div>
+		
+		<h3>Longevitate</h3>
+		<div class="poz6">
+			<p>Durata de viață a unei pisici variază în funcție de rasă, mediu și îngrijire. În general, o pisică domestică poate trăi între 12 și 20 de ani, uneori chiar mai mult.</p>
+			<img src="p6.webp" alt="p6">
+		</div>
+	</div>
+	<br>
+	<section class="blana">
+		<h2><i>Explorează rase magnifice</i></h2>
+		<div class="image">
+		<p><a href="blana1.html"><img src="b1.webp" alt="b1"></a></p>
+		<p><a href="blana2.html"><img src="b2.webp" alt="b2"></a></p>
+		<p><a href="blana3.html"><img src="b3.webp" alt="b3"></a></p>
+		</div>
+		<div class="text">
+			<h4><i>Blană scurtă</i></h4>
+			<h4><i>Blană medie</i></h4>
+			<h4><i>Blană lungă</i></h4>
+		</div>
+	</section>
+	<br>
+	
+	<div class="treip">
+			<img src="unu.webp" class="lal" alt="unu" style="width:25%">
+			<img src="doi.webp" class="lal" alt="doi" style="width:25%">
+			<img src="trei.webp" class="lal" alt="trei" style="width:25%">
+		</div>
+		<div class="idk"><p> © Purrfect Land</p></div>
+		
+		
+	<script>
+		var icon = document.getElementById("icon");
+icon.onclick= function(){
+	document.body.classList.toggle("dark-theme");
+	
+if (document.body.classList.contains("dark-theme")) {
+        localStorage.setItem("theme", "dark"); 
+    } else {
+        localStorage.setItem("theme", "light"); 
+    }
+};
+
+
+window.onload = function () {
+    const savedTheme = localStorage.getItem("theme"); 
+    if (savedTheme === "dark") {
+        document.body.classList.add("dark-theme"); 
+    } else {
+        document.body.classList.remove("dark-theme"); 
+    }
+};
+	</script>
+</body>
+</html>

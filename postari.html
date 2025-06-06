@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
+	<link rel="stylesheet" href="general.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<link rel="icon" type="image/jfif" href="dash.jfif">
+	<script type="text/javascript" src="postari.js" defer></script>
+	<title>Purrrfect Land</title>
+	<style>
+	*{
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+	list-style: none;
+	box-sizing: border-box;
+}
+:root{
+	--primary-color: #edf2fc;
+	--secondary-color: #212121;
+}
+.dark-theme{
+	--primary-color: #353035;
+	--secondary-color: #fff;
+}
+body{
+	font-family: Bahnschrift Light;
+	background-color: var(--primary-color);
+}
+#icon{
+	width: 30px;
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+body{
+	font-family: Serif;
+}
+nav{
+	background-image: linear-gradient(to right, white,white,white, #ffbfbf ,#fdffbf ,#a1d5a7 ,#bad9df ,#e0cde5);
+	height: 80px;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+nav a{
+	display: block;
+}
+ul.lol li:nth-child(1) {
+  color: #b046cb; 
+}
+ul.lol li:nth-child(2) {
+  color: #b046cb; 
+}
+ul.lol li:nth-child(3) {
+  color: #b046cb; 
+}
+ul.lol li:nth-child(4) {
+  color: #b046cb; 
+}
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: Cambria;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropbtn a{
+	font-family: Cambria;
+}
+.dropdown a{
+	font-family: Cambria;
+}
+.dropbtn{
+	position: relative;
+		display: inline-block;
+}
+label.logo{
+	color: black;
+	font-size: 40px;
+	line-height: 80px;
+	padding: 0 100px;
+	font-weight: bold;
+	font-family: serif;
+}
+nav ul{
+	float: right;
+	margin-right: 20px;
+}
+nav ul li{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 5px;
+}
+nav ul li a{
+	color: black;
+	font-size: 17px;
+	padding: 7px 13 px;
+	font-weight: 700;
+	font-family: Cambria;
+}
+
+.lol a:hover{
+	color: #b046cb;
+	transition: .5s;
+}
+.checkbtn{
+	font-size: 30px;
+	color: black;
+	float: right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor: pointer;
+	display: none;
+}
+#check{
+	display: none;
+}
+@media (max-width: 518px){
+	label.logo{
+		font-size: 25px;
+		padding-left: 50px;
+	}
+	
+}
+@media (max-width: 361px){
+	label.logo{
+		font-size: 20px;
+		padding-left: 50px;
+	}
+	
+}
+@media (max-width: 1126px){
+	
+	div.treip img{
+		padding: 20px;
+	}
+	section.parte2{
+		column-count:2;
+	}
+	div.whatif h1{
+		display: none;
+	}
+}
+@media (max-width: 621px){
+	section.parte2{
+		column-count:1;
+	
+	}
+	
+} 
+@media (max-width: 952 px){
+	label.logo{
+		font-size: 30px;
+		padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+}
+
+@media (max-width: 877px){
+	.checkbtn{
+		display: block;
+	}
+	ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #472280;
+		top: 80px;
+		left: -100%;
+		text-align: center;
+		transition: all .5s;
+		  display: flex;
+  flex-direction: column;
+	}
+	nav ul li{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+		
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover,a.ok{
+		background: none;
+		color: #black;
+	}
+	#check:checked ~ ul{
+		left: 0;
+	}
+}
+
+h1{
+	color: var(--secondary-color);
+}
+
+        #uploadForm {
+            margin: 20px;
+        }
+        #fileInput {
+            display: none; /* Ascundem input-ul real */
+        }
+        .custom-file-label {
+            display: inline-block;
+            background-color: #e1bee7;
+            color: #4a148c;
+            border: 2px solid #4a148c;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .custom-file-label:hover {
+            background-color: #4a148c;
+            color: #ffffff;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .image-container {
+            position: relative;
+        }
+        img {
+            width: 150px;
+            height: auto;
+            border: 2px solid #9c27b0;
+            border-radius: 5px;
+        }
+        #uploadButton {
+            background-color: #9c27b0;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+        #uploadButton:hover {
+            background-color: #6a1b9a;
+            transform: scale(1.05);
+        }
+		
+        h1 {
+            color: #6a0dad;
+        }
+        .container {
+            margin-top: 20px;
+        }
+        #uploadSection, #drawSection {
+            margin-bottom: 30px;
+        }
+        button {
+            background-color: #6a0dad;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8b5fc2;
+        }
+        canvas, svg {
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    </style>
+	</style>
+</head>
+<body>
+	<nav>
+		<input type="checkbox" id="check" >
+		<label for="check" class="checkbtn">
+			<i class="fas fa-bars"></i>
+		</label>
+		<img src="day-and-night.png" id="icon">
+		<label class="logo"><i>Purrrfect Land</i></label>
+		<ul class="lol">
+			<li>
+				<div class="dropdown">
+				<a class="ok dropbtn" href="test.html">Acasă</a>
+				</div>
+				<div class="dropdown">
+				<a  class="ok dropbtn" href="postari.html">Postări</a>
+				</div>
+				</li>
+			<li>
+			<div class="dropdown">
+				<a class="dropbtn" href="general.html">General</a>
+				<div class="dropdown-content">
+					<a href="blana1.html">Blană scurtă</a>
+					<a href="blana2.html">Blană medie</a>
+					<a href="blana3.html">Blană lungă</a>
+				</div>
+			</div>
+			</li>
+			<li><div class="dropdown"> <a class="dropbtn" href="curiozitati.html">Curiozități</a></div></li>
+			<li><div class="dropdown"> <a class="dropbtn" href="trecut.html">Trecut</a></div></li>
+		</ul>
+	</nav>
+	<h1>Bine ai venit!</h1>
+    <p id="welcomeMessage"></p>
+    <form id="uploadForm">
+        <!-- Label personalizat pentru input -->
+        <label for="fileInput" class="custom-file-label">Alege imagine</label>
+        <input type="file" id="fileInput" accept="image/*">
+        <button type="button" id="uploadButton">Postează</button>
+    </form>
+    <div id="gallery"></div>
+	<div id="drawSection" class="container">
+        <h2>Desenează ceva cu Canvas</h2>
+        <canvas id="drawingCanvas" width="400" height="300"></canvas>
+        <br>
+         <button id="postCanvasButton">Postează Desen</button>
+        <button id="clearCanvas">Șterge Canvas</button>
+        <div id="canvasPreview"></div>
+
+    </div>
+    
+</body>
+</html>
